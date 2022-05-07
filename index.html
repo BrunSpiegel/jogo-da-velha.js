@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <title>Jogo da velha JS</title>
+</head>
+
+<body>
+  <section class="left-container">
+    <div class="center-box center-left-box"></div>
+    <div class="player-box">
+      <input class="input-player input-player-1" placeholder="Jogador 1">
+      <div class="wrapper-field-player-2">
+        <input class="input-player input-player-2" placeholder="Jogador 2">
+        <div class="switcher">
+          <div class="switcher-ball"></div>
+        </div>
+      </div>
+    </div>
+    <div class="match-type-box">
+      <h2 class="match-type-title">Tipo de Partida</h2>
+      <div class="align-match-type-modes">
+        <span>Melhor de 3</span>
+        <div class="switcher-match-type">
+          <div class="switcher-ball"></div>
+        </div>
+        <span>Melhor de 5</span>
+      </div>
+      <button class="play-button">Jogar</button>
+      <div class="match-history">
+        <h2 class="match-history-title">Histórico de partidas</h2>
+        <div class="winner-field">
+          <div class="winner-box">
+            <span class="winner-span">Vencedor</span>
+            <p class="display-winner">Primeiro Quadrado</p>
+          </div>
+          <span class="cenary-text">Cenário</span>
+          <div class="wrapper-small-squares">
+            <div class="small-squares">o</div>
+            <div class="small-squares">o</div>
+            <div class="small-squares">x</div>
+            <div class="small-squares">o</div>
+            <div class="small-squares">x</div>
+            <div class="small-squares">x</div>
+            <div class="small-squares"></div>
+            <div class="small-squares">o</div>
+            <div class="small-squares">x</div>
+          </div>
+        </div>
+        <div class="winner-field">
+          <div class="winner-box">
+            <span class="winner-span">Vencedor</span>
+            <p class="display-winner">Primeiro Quadrado</p>
+          </div>
+          <span class="cenary-text">Cenário</span>
+          <div class="wrapper-small-squares">
+            <div class="small-squares">o</div>
+            <div class="small-squares">o</div>
+            <div class="small-squares">x</div>
+            <div class="small-squares">o</div>
+            <div class="small-squares">x</div>
+            <div class="small-squares">x</div>
+            <div class="small-squares"></div>
+            <div class="small-squares">o</div>
+            <div class="small-squares">x</div>
+          </div>
+        </div>
+      </div>
+      <button class="restart-button">Reiniciar</button>
+  </section>
+  <section class="center-container">
+    <div class="score-box">
+      <h1 class="main-title">Placar</h1>
+      <div class="align-score-box">
+        <span class="score score-player-1">01</span>
+        <span class="title-winner">Jogador 1</span>
+        <span class="score score-player-2">01</span>
+      </div>
+    </div>
+
+    <div class="battlefield">
+      <div class="big-square big-square-0"></div>
+      <div class="big-square big-square-1"></div>
+      <div class="big-square big-square-2"></div>
+      <div class="big-square big-square-3"></div>
+      <div class="big-square big-square-4"></div>
+      <div class="big-square big-square-5"></div>
+      <div class="big-square big-square-6"></div>
+      <div class="big-square big-square-7"></div>
+      <div class="big-square big-square-8"></div>
+    </div>
+  </section>
+  <section class="right-container">
+    <h2 class="history-move-title">Histórico de jogadas</h2>
+    <div class="history-move-box">
+      <div class="history-moves">
+        <span class="moves-letter">O</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+      </div>
+      <div class="history-moves">
+        <span class="moves-letter">X</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+      </div>
+      <div class="history-moves">
+        <span class="moves-letter">O</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+      </div>
+      <div class="history-moves">
+        <span class="moves-letter">X</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+      </div>
+      <div class="history-moves">
+        <span class="moves-letter">O</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+      </div>
+      <div class="history-moves">
+        <span class="moves-letter">X</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+      </div>
+      <div class="history-moves">
+        <span class="moves-letter">O</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+      </div>
+      <div class="history-moves">
+        <span class="moves-letter">X</span>
+        <div>
+          <h2 class="moves-player">Jogador 1</h2>
+          <p class="moves-paragraph">Primeiro Quadrado</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="./src/scripts/index.js"></script>
+</body>
+
+</html>
